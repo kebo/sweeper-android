@@ -6,4 +6,4 @@ Note:
 It use the ContentProvider to operate sms database, and it would be disable in some kinds of android mobile phone which not
 provide the "content://sms" Content Provider.
 
-Good luck!
+Enjoying it!
