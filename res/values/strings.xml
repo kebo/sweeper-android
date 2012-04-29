@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Please add phone number here</string>
+    <string name="app_name">Sweeper</string>
+    <string name="btn_add">Add</string>
+    
+</resources>
