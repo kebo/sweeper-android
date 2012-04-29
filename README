@@ -1,4 +1,4 @@
-This is an android application used for delete SMS sent from certain numbers which you can set by yourself.
+This is an android application used for removing SMS sent from certain numbers which you can set by yourself.
 
 For me, I used it to auto-remove the SMS sent from 10010100 which the Unicom sent AD everyday.
 
