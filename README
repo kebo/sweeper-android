@@ -3,7 +3,7 @@ This is an android application used for removing SMS sent from certain numbers w
 For me, I used it to auto-remove the SMS sent from 10010100 which the Unicom sent AD everyday.
 
 Note:
-It use the ContentProvider to operate sms database, and it would disable in some kinds of android mobile phone which not
+It use the ContentProvider to operate sms database, and it would be disable in some kinds of android mobile phone which not
 provide the "content://sms" Content Provider.
 
 Good luck!
