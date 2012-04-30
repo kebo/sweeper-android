@@ -2,23 +2,21 @@ package info.iamkebo.sweeper;
 
 import java.util.List;
 
+import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.IBinder;
 
-public class SmsService extends Service {
+public class SmsService extends IntentService {
+
+	public SmsService() {
+		super("SmsService");
+	}
 
 	@Override
 	public IBinder onBind(Intent intent) {
-		// TODO Auto-generated method stub
 		return null;
-	}
-	
-	@Override
-	public int onStartCommand(Intent intent, int flags, int startId){
-		deleteSms();
-		return START_NOT_STICKY;
 	}
 	
 	private void deleteSms(){
@@ -28,6 +26,12 @@ public class SmsService extends Service {
 		for(String number: numbers){
 			getContentResolver().delete(uri, "address=?", new String[]{number});
 		}
+	}
+
+	@Override
+	protected void onHandleIntent(Intent intent) {
+		deleteSms();
+		stopSelf();
 	}
 	
 }
